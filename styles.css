@@ -21,8 +21,9 @@ footer{
 }
 #intro{
   border-radius: 0;
-  background:url(images/amsterdam.jpg);
+  background:url(images/sky.jpg);
   background-size:cover;
+  height:100vh;
 }
 #intro .container{
   padding:20px;
@@ -33,6 +34,22 @@ footer{
 
 #about, #projects{
   border-bottom:1px solid #999;
+}
+
+#btt{
+  background:#222;
+  border-radius:50%;
+  height:45px;
+  width:45px;
+  overflow:hidden;
+  text-align:center;
+  position:fixed;
+  bottom:1.6%;
+  right:1.6%;
+  display:none;
+}
+#btt i{
+  margin-top:4px;
 }
 
   @media (min-width: 768px) {
