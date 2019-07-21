@@ -1,0 +1,64 @@
+*{
+	overflow-wrap: break-word;
+}
+body{
+	font-size:14px;
+	background-image:url(metrix.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.container{
+	background:#f4f4f4;
+	padding:20px;
+	margin-top:5vh;
+}
+
+#content{
+	display:none;
+}
+#encryptedText{
+	display:none;
+}
+#decryptedText{
+	display:none;
+}
+#decrypt{
+	display:none;
+}
+#encrypt{
+	display:none;
+}
+#encryptHeader{
+	display: none;
+}
+#decryptHeader{
+	display: none;
+}
+
+#decryptedText2{
+	font-weight: bold;
+	margin-top:10px;
+}
+#encryptedText2{
+	font-weight: bold;
+	margin-top:10px;
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding-top:10px;
+	background:#f4f4f4;
+	text-align: center;
+}
+#textToCopy{
+	display:none;
+}
+
+@media(max-width:885px){
+	body{
+		background-size:auto;
+		background-position:top;
+	}
+}

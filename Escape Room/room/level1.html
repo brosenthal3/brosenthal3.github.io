@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Espace Room</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+</head>
+<body>
+	<div class="level">
+		<small>Level 1</small>
+	</div>
+	<div class="container">
+		<h1>Welcome to my Escape Room!</h1>
+		<p>Hey there! How are you doing? <br>This is my Escape Room. Your objective is to reach the <span onclick="next()">next</span> level. Think you can do it?</p>
+		<button onclick="yes()">Yes</button><button onclick="no()">No</button>
+		
+	</div>
+
+	<script type="text/javascript">
+		var escapelvl1;
+		function next(){
+			window.location.href="level2.html";
+		}
+		function yes(){
+			alert('Good for you!');
+		}
+		function no(){
+			alert('I think you can do it!');	
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escape Room</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+
+</head>
+<body class="floor2">
+	<div class="level">
+		<small>Level 11</small>
+	</div>
+
+	<div class="container2 floor2">
+		<h1>Welcome to the second floor!</h1>
+		<p id="error">Color Error: This page should be <span title="https://www.w3schools.com/cssref/css_colors.asp">blue.</span></p>
+		<input type="text" name="colorCode" id="blue" placeholder="Error Code" autocomplete="off"> <button onclick="blue()">FIX ERROR</button>
+	</div>
+
+	<script type="text/javascript">
+		//need to block page from refreshing
+
+		function blue(){
+			let input = document.getElementById('blue').value;
+			if (input == '#0000FF') {
+				document.querySelector('#error').innerText = 'Error Fixed! Thank You!';
+				document.querySelector('#error').style.backgroundColor="#7de86f";
+				document.querySelector('.floor2').style.backgroundColor="#0000FF";
+				setTimeout(next, 700);
+			}else{
+				alert("Don't joke with me. It's a serious error. Find me the color now.")
+			}
+		}
+
+		function next(){
+				window.location.href="level12.html";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escape Room</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+
+</head>
+<body>
+	<div class="level">
+		<small>Level 7</small>
+	</div>
+
+	<div class="container">
+		<h1><a href="https://www.ikbenben.com/Encrypter%20decrypter/index.html" target="_blank">Key 4<a></h1>
+		<p>Lau$sapp$hkra$Ukq$jecqvah$ex$kqx2$=o$ukq$iqox$l]za$cqaooah0$ukq#za$ckx$xk$arxav$xla$t]ooskvh2Xla$t]ooskvh$eo>$ckxk,pazap<%</p>
+
+		<input type="text" name="pw" id="pw"> <button id="enter">Enter</button>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById('enter').onclick=function(){
+			let input = document.getElementById('pw').value;
+			if (input == 'goto(level8)') {
+				window.location.href='level8.html';
+			} else{
+				alert('You thought it was that easy?');
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Espace Room</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+	
+</head>
+<body class="floor2">
+	<div class="level">
+		<small>Level 18</small>
+	</div>
+	<div class="container2 floor2">
+		<h1 id="title">Good...</h1>
+		<p>Well I lied. Freedom isn't really close, but it is a bit closer. You need <span id="solve">to unlock</span> the next combination lock if you want to get to the next level.</p>
+		<!-- encrypt all of the riddles, key is the number in the start -->
+		<li>1. Ihr!o`ld!hr!MCK-!id!ehde!ui`u!xd`s/</li>
+		<li>2. Vjc"cpckgcq"a_p%v"ipmu"JVKN0"Cpatwrv"gv0</li>
+		<li>3. Klt#jr`k#fp#gf{*qbri<</li>
+		<li>4. pa]za$xleo$kra$aitxu2</li>
+		<br>
+		<input type="number" class="num" id="lock1" placeholder="1"> 
+		<input type="text" class="num" id="lock2" placeholder="2"> 
+		<input type="number" class="num" id="lock3" placeholder="3"> 
+		<input type="text" class="num" id="lock4" placeholder="4">
+		<br>
+		<button id="unlock">CLICK TO UNLOCK</button>
+	</div>
+
+	<script type="text/javascript">
+		//1. lbj's death = 1973
+		//2. HTML encrypted with key 2 = JVKN
+		//3. dix-neuf = 19
+		//4. not the words emply, just nothing written there.
+		var unlock = document.getElementById('solve');
+		unlock.addEventListener('click', function(){
+			let one = document.getElementById('lock1').value;
+			let two = document.getElementById('lock2').value;
+			let three = document.getElementById('lock3').value;
+			let four = document.getElementById('lock4').value;
+			let mistakes = 0;
+
+			if (one != 1973) {
+				mistakes++;
+				console.log(mistakes);
+			}
+			if (two != 'JVKN') {
+				mistakes++;
+				console.log(mistakes);
+			}
+			if (three != 19) {
+				mistakes++;
+				console.log(mistakes);
+			}
+			if (four !=  'empty') {
+				mistakes++;
+				console.log(mistakes);
+			}
+			if (mistakes == 0) {
+				alert('impressive! you got them all right! On to the next level.');
+				window.location.href="level19.html";
+			} else{
+				alert('You have made '+mistakes+' mistakes.');
+			}
+		});
+
+	</script>
+</body>
+</html>

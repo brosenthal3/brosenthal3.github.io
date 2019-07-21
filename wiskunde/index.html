@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiskundige formules berekenen</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+			<form action="Javascript:calculate();">
+					<div id="title">
+						<h2>ABC-formule berekenen:</h2>
+						<p><strong>a</strong>x&sup2; + <strong>b</strong>x + <strong>c</strong> = 0</p>	
+					</div>
+					<div id="abcInput">
+						<input type="number" name="aValue" id="aValue" required placeholder="a">
+						<br>
+						<input type="number" name="bValue" id="bValue" required placeholder="b">
+						<br>
+						<input type="number" name="cValue" id="cValue" required placeholder="c">
+						<br>
+						<input type="submit" name="submit" value="berekenen" class="submit btn btn-primary">
+					</div>
+					
+			
+					<div class="abcAnswer">
+						D = <span id="d"></span>
+						<br><br>
+						x = <span id="x"></span>
+						<br><br>
+						x = <span id="x2"></span> 
+					</div>
+			
+				</form>
+
+				<div class="clear"></div>
+				
+				<div id="title" class="mt-4">
+						<h2>Pytagoras berekenen:</h2>
+						<p><strong>a&sup2;</strong>	+ <strong>b&sup2;</strong> = <strong>c&sup2;</strong></p>	
+				</div>
+			
+					<div id='welkeForm'>
+						<input type="button" id="welkeA" value="a" class="full btn btn-primary"><br>
+						<input type="button" id="welkeB" value="b" class="full btn btn-primary"><br>
+						<input type="button" id="welkeC" value="c" class="full btn btn-primary">
+					</div>
+					
+			
+			
+					<form action="Javascript:pytagorasA();" name="calculateA">
+			
+						<div id="aBerekenen">
+							<input type="number" id="bValuePA" required placeholder="b">
+							<br>
+							<input type="number" id="cValuePA" required placeholder="c">
+							<br>
+							<input type="submit" name="submit" value="a berekenen" class="submit btn btn-primary">
+							<br>
+							<input type="button" name="back" class="back btn btn-secondary" value="terug" id="backA">
+						</div>
+			
+					</form>
+			
+					<form action="Javascript:pytagorasB();" name="calculateB">
+			
+						<div id="bBerekenen">
+							<input type="number" id="aValuePB" required placeholder="a">
+							<br>
+							<input type="number" id="cValuePB" required placeholder="c">
+							<br>
+							<input type="submit" name="submit" value="b berekenen" class="submit btn btn-primary">
+							<br>
+							<input type="button" name="back" class="back btn btn-secondary" value="terug" id="backB">
+						</div>
+					</form>
+			
+					<form action="Javascript:pytagorasC();" name="calculateC">
+			
+						<div id="cBerekenen">
+							<input type="number" id="aValuePC" required placeholder="a">
+							<br>
+							<input type="number" id="bValuePC" required placeholder="b">
+							<br>
+							<input type="submit" name="submit" value="c berekenen" class="submit btn btn-primary">
+							<br>
+							<input type="button" name="back" class="back btn btn-secondary" value="terug" id="backC">
+						</div>
+					</form>
+			
+			
+						<div class="abcAnswer" id="abcAnswerP">
+							a = <span id="aP"></span>
+							<br><br>
+							b = <span id="bP"></span>
+							<br><br>
+							c = <span id="cP"></span> 
+						</div>
+	</div>
+	
+	<script type="text/javascript">
+		function calculate() {
+			var a = document.getElementById('aValue').value;
+			var b = document.getElementById('bValue').value;
+			var c = document.getElementById('cValue').value;
+
+			var d = document.getElementById('d');
+			var xAnswer = document.getElementById('x');
+			var x1Answer = document.getElementById('x1');
+			var x2Answer = document.getElementById('x2');
+
+			if (a == 0) {
+				alert("a can't be equel to zero");
+			} else{
+				xAnswer.innerHTML="";
+				x2Answer.innerHTML="";
+				var D = Math.pow(b, 2) - 4 * a * c;
+				
+				d.innerHTML=D;
+				if (D<0) {
+					console.log("Since D is negative, there isn't an answer");
+				} else if(D==0){
+					var x = (-b - Math.sqrt(D))/(2 * a);
+					console.log(x);
+					xAnswer.innerHTML=x;
+					x2Answer.innerHTML=x;
+				} else{
+
+					var x1 = (-b - Math.sqrt(D))/(2 * a);
+					var x2 = (-b + Math.sqrt(D))/(2 * a);
+
+					x1 = x1.toFixed(4);
+					x2 = x2.toFixed(4);
+
+					console.log(x1+" v "+x2);
+					document.getElementById('x').innerHTML=x1;
+					x2Answer.innerHTML=x2;
+				}
+			}
+		}
+
+		var welke;
+
+		var aAnswer = document.getElementById('aP');
+		var bAnswer = document.getElementById('bP');
+		var cAnswer = document.getElementById('cP');
+
+		document.getElementById('welkeA').onclick=function(){
+			welke='a';
+
+			aAnswer.innerHTML='';
+			bAnswer.innerHTML='';
+			cAnswer.innerHTML='';
+
+			document.getElementById('welkeForm').style.display="none";
+			document.getElementById('aBerekenen').style.display="block";
+			document.getElementById('abcAnswerP').style.display="block";	
+		}
+		document.getElementById('welkeB').onclick=function(){
+			welke='b';
+
+			aAnswer.innerHTML='';
+			bAnswer.innerHTML='';
+			cAnswer.innerHTML='';
+			
+			document.getElementById('welkeForm').style.display="none";
+			document.getElementById('bBerekenen').style.display="block";
+			document.getElementById('abcAnswerP').style.display="block";
+		}
+		document.getElementById('welkeC').onclick=function(){
+			welke='c';
+
+			aAnswer.innerHTML='';
+			bAnswer.innerHTML='';
+			cAnswer.innerHTML='';
+
+			document.getElementById('welkeForm').style.display="none";
+			document.getElementById('cBerekenen').style.display="block";
+			document.getElementById('abcAnswerP').style.display="block";
+		}
+
+
+		//this is the code for the back buttons, every function for each button
+		document.querySelector('#backA').onclick=function(){
+			aAnswer.innerHTML='';
+			bAnswer.innerHTML='';
+			cAnswer.innerHTML='';
+
+			document.getElementById('bValuePA').value='';
+			document.getElementById('cValuePA').value='';
+
+			document.getElementById('welkeForm').style.display="block";
+			document.getElementById('aBerekenen').style.display="none";
+			document.getElementById('abcAnswerP').style.display="none";
+		}
+		document.querySelector('#backB').onclick=function(){
+			aAnswer.innerHTML='';
+			bAnswer.innerHTML='';
+			cAnswer.innerHTML='';
+
+			document.getElementById('aValuePB').value='';
+			document.getElementById('cValuePB').value='';
+
+			document.getElementById('welkeForm').style.display="block";
+			document.getElementById('bBerekenen').style.display="none";
+			document.getElementById('abcAnswerP').style.display="none";
+		}
+		document.querySelector('#backC').onclick=function(){
+			aAnswer.innerHTML='';
+			bAnswer.innerHTML='';
+			cAnswer.innerHTML='';
+
+			document.getElementById('aValuePC').value='';
+			document.getElementById('bValuePC').value='';
+
+			document.getElementById('welkeForm').style.display="block";
+			document.getElementById('cBerekenen').style.display="none";
+			document.getElementById('abcAnswerP').style.display="none";
+		}
+
+		//calculating the asked number
+		function pytagorasA() {
+			//get the value of b and c
+			var b = document.getElementById('bValuePA').value;
+			var c = document.getElementById('cValuePA').value;
+			//calculate what a is, using pytagoras
+			var a = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
+			a = a.toFixed(4);
+
+			aAnswer.innerHTML=a;
+			bAnswer.innerHTML=b;
+			cAnswer.innerHTML=c;
+		}
+
+		function pytagorasB() {
+			//get the value of b and c
+			var a = document.getElementById('aValuePB').value;
+			var c = document.getElementById('cValuePB').value;
+			//calculate what a is, using pytagoras
+			var b = Math.sqrt(Math.pow(c, 2) - Math.pow(a, 2));
+			b = b.toFixed(4);
+
+			aAnswer.innerHTML=a;
+			bAnswer.innerHTML=b;
+			cAnswer.innerHTML=c;
+		}
+		function pytagorasC() {
+			//get the value of b and c
+			var a = document.getElementById('aValuePC').value;
+			var b = document.getElementById('bValuePC').value;
+			//calculate what a is, using pytagoras
+			var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+			c = c.toFixed(4);
+
+			aAnswer.innerHTML=a;
+			bAnswer.innerHTML=b;
+			cAnswer.innerHTML=c;
+		}
+
+			
+
+	</script>
+</body>
+</html>
