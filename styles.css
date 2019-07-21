@@ -1,6 +1,8 @@
+body{
+  background:#dfdfdf;
+}
 .card img{
-    height:200px;
-    
+    height:200px;   
 }
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -14,7 +16,9 @@ footer{
   padding:10px;
   text-align:center;
 }
-
+.jumbotron{
+  border-radius:0;
+}
 #intro{
   border-radius: 0;
   background:url(images/amsterdam.jpg);
@@ -25,6 +29,10 @@ footer{
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(5px);
   border-radius:5px;
+}
+
+#about, #projects{
+  border-bottom:1px solid #999;
 }
 
   @media (min-width: 768px) {
