@@ -9,10 +9,10 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
 
     <!-- Custom styles for this template -->
     <link href="./index_files/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
   </head>
   <body cz-shortcut-listen="true">
@@ -35,7 +35,7 @@
         </div>
         </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="navbar navbar-dark bg-dark shadow-sm" id="navbar">
         <div class="container d-flex justify-content-between">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
                 <strong>Ikbenben.com</strong>
@@ -50,9 +50,11 @@
 
 <main role="main">
 
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center" id="intro">
     <div class="container">
-      <h1 class="jumbotron-heading">Welcome!</h1>
+      <h1 class="jumbotron-heading">Ben Rosenthal</h1>
+      <p class="jumbotron-heading">Full Stack Web Developer</p>
+      
       <p class="lead text-muted">On this website you can see my small projects I've made while learning HTML, CSS and Javascript. Right now I'm doing some PHP and SQL and I've also started doing app-development for Android and IOS.</p>
     </div>
   </section>
@@ -151,6 +153,15 @@
       <small class="text-muted">Copyright Ben Rosenthal&copy; 2018-2019. All rights reserved.</small>
     </div>
   </footer>
+
+  <script>
+      const intro = document.getElementById('intro');
+      const navbarHeight = document.getElementById('navbar').offsetHeight;
+      const pageHeight = window.innerHeight;
+      console.log(pageHeight);
+      intro.style.height = pageHeight - navbarHeight + "px";
+
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
