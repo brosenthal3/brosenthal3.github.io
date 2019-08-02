@@ -65,15 +65,89 @@
   <section class="jumbotron text-center" id="about">
       <div class="container">
         <h1 class="jumbotron-heading">About Me</h1>
-        <p class="lead text-muted">Hey there! My name is Ben Rosenthal and I've been programming for about 7 months. When it comes to coding, I like creating interactive websites with Javascript. I am not a designer, but by using Bootstrap combined with my knowledge of css, I am able to make designed websites. I always try to document my code with comments, so that it would be readable and understandable.</p>
+        <p class="lead text-muted">Hey there! My name is Ben Rosenthal and I've been programming for about 7 months. When it comes to coding, I like creating interactive websites with Javascript. I am not a designer, but by using Bootstrap combined with my knowledge of css, I am able to make designed websites. I always try to document my code with comments, so that it would be readable and understandable.<br> All of my projects on this site are fully responsive for computers, tablets and phones.</p>
       </div>
-    </section>
+  </section>
   
   <!-- Projects album section/div -->
-  <div class="album py-5 bg-light" id="projects">
+  <section class="album py-5 bg-light" id="projects">
     <div class="container">
         <h1 class="jumbotron-heading text-center mb-5">My Projects</h1>
-        <div class="card-deck">
+
+        <div class="card mb-5">
+            <div class="row no-gutters">  
+              <div class="col-md-4">
+                <a href="https://brosenthal3.github.io/opinions" target="_blank"><img src="images/opinions.png" class="card-img" alt="Code Image"></a>
+              </div>          
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Opinions Website</h5>
+                  <p class="card-text">Opinions is a website that allowes you to view popular political ideologies like Communism, Conservatism or Libertarianism and take a small quiz that shows you your own political ideology. The website takes advantage of ES6 Javascript syntax like arrow functions and classes. The styling was created with the help of Bootstrap 4 along with my personal design.</p>
+                  <div class="btn-group">
+                    <a href="https://brosenthal3.github.io/opinions" target="_blank" class="btn btn-primary">View Project</a>
+                    <a href="https://github.com/brosenthal3/opinions" target="_blank" class="btn btn-info">Code</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        <div class="card mb-5">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <a href="https://brosenthal3.github.io/ambten" target="_blank"><img src="images/ambten.png" class="card-img" alt="Code Image"></a>
+            </div>            
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Ambten Website</h5>
+                <p class="card-text">This is a static single-page website of a made up Dutch company called "Ambten". This company helps with start-ups and small companies. The website has 5 sections including about us and pricing. The Ambten website is made using HTML5 and CSS with the help of Bootstrap 4 for styling.</p>
+                <div class="btn-group">
+                  <a href="https://brosenthal3.github.io/ambten" target="_blank" class="btn btn-primary">View Project</a>
+                  <a href="https://github.com/brosenthal3/ambten" target="_blank" class="btn btn-info">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-5">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <a href="https://brosenthal3.github.io/encrypter" target="_blank"><img src="images/encrypter.png" class="card-img" alt="Code Image"></a>
+            </div>            
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Text Encrypter</h5>
+                <p class="card-text">This is a small Javascript application that uses ascii codes in order to encrypt and decrypt text, using your own special key number. The user interface is made with Javascript and the design with Bootstrap 4.</p>
+                <div class="btn-group">
+                  <a href="https://brosenthal3.github.io/encrypter" target="_blank" class="btn btn-primary">View Project</a>
+                  <a href="https://github.com/brosenthal3/encrypter" target="_blank" class="btn btn-info">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-5">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <a href="https://brosenthal3.github.io/letters" target="_blank"><img src="images/letters.png" class="card-img" alt="Code Image"></a>
+              </div>            
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Letters Game</h5>
+                  <p class="card-text">The missing letters game is a small Javascript game. You can choose from 3 themes and each time, click on the missing letter from the randomly chosen word. This project was made with Vanilla Javascript and uses some Bootstrap 4 for styling.</p>
+                  <div class="btn-group">
+                    <a href="https://brosenthal3.github.io/letters" target="_blank" class="btn btn-primary">View Project</a>
+                    <a href="https://github.com/brosenthal3/letters" target="_blank" class="btn btn-info">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--<div class="card-deck">
 
             <div class="card">
               <img src="images/schoolCode.png" class="card-img-top" alt="...">
@@ -151,11 +225,11 @@
                   </div>
               </div>
             </div>
-      </div>
+      </div>-->
 
       
     </div>
-  </div>
+  </section>
 
   <!-- Contact me section -->
   <section class="jumbotron text-center">
@@ -194,7 +268,7 @@
   </footer>
 
   <!-- Back to top button with an icon -->
-  <a id="btt" href="#navbar" class="text-white"><i class="fas fa-chevron-up fa-2x"></i></a>
+  <a id="btt" href="Javascript: toTop()" class="text-white"><i class="fas fa-chevron-up fa-2x"></i></a>
 
   <!-- Selfmade ui.js file -->
   <script src="ui.js"></script>

@@ -28,3 +28,9 @@ window.onload = function setHeight(){
     }
 
   });
+
+  //the function that gets activated when the back to top buttn is pressed.
+  function toTop() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+  }
