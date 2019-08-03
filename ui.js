@@ -6,7 +6,9 @@ function setHeight(){
   //the viewheight
   const pageHeight = window.innerHeight;
   //set the height to the pageheight - navbar height
-  intro.style.height = pageHeight - navbarHeight + "px";
+  if(pageHeight > 350){
+    intro.style.height = pageHeight - navbarHeight + "px";
+  }
 }
 
 //when the user scrolls, document the scrolling position
@@ -28,7 +30,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-document.onclick = setHeight();
 window.addEventListener('load', setHeight());
 
 //the function that gets activated when the back to top buttn is pressed.
