@@ -1,3 +1,6 @@
+:root{
+  --primary-color:#A56C47;
+}
 
 html{
   scroll-behavior: smooth;
@@ -6,19 +9,24 @@ body{
   background:#dfdfdf;
 }
 .card-img{
-  object-fit:cover;
+  object-fit:contain;
   height:100%;
-  width:100%; 
-  border-radius:0;
+  width:100%;
 }
 .card{
   overflow:hidden;
-  transition:transform 220ms ease-in-out, box-shadow 220ms;
+  background:inherit;
+  border:0;
+  border-bottom:2px solid var(--primary-color);
+  padding:50px 0;
+  border-radius:0;
 }
-/*.card:hover{
-  transform: scale(1.015);
-  box-shadow:1px 1px 10px 1px #222;
-}*/
+.card:last-child{
+  border:0;
+}
+.card-body{
+  padding:30px;
+}
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -41,11 +49,11 @@ footer{
   background-size:cover;
   height:100vh;
 }
-#intro .container{
+#introTxt{
   padding:20px;
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(5px);
   border-radius:5px;
+  backdrop-filter: blur(10px);
 }
 
 #about, #projects{
@@ -68,13 +76,14 @@ footer{
   margin-top:4px;
 }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
-  @media (max-width: 990px) {
-    .card-img{
-      height:100%;
-    }
+}
+@media (max-width: 990px) {
+  .card-img{
+    height:100%;
+    object-fit:cover;
   }
+}
