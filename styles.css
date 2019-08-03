@@ -1,6 +1,8 @@
 :root{
-  --secondary-color:#4A4B02;
+  --accent-color:#4A4B02;
   --primary-color:#A56C47;
+  --secondary-color:#888;
+  --dark:#333;
 }
 
 html{
@@ -9,18 +11,52 @@ html{
 body{
   background:#dfdfdf;
 }
+
+#intro{
+  border-radius: 0;
+  background:url(images/amsterdam.jpg);
+  background-size:cover;
+  height:100vh;
+}
+#introTxt{
+  padding:23px;
+  background-color: rgba(255, 255, 255, 0.80);
+  border-radius:5px;
+  backdrop-filter: blur(10px);
+}
+
+#about, #projects{
+  border-bottom:1px solid var(--secondary-color);
+}
+
+#btt{
+  background:#222;
+  border-radius:50%;
+  height:45px;
+  width:45px;
+  overflow:hidden;
+  text-align:center;
+  position:fixed;
+  bottom:1.6%;
+  right:1.6%;
+  display:none;
+}
+#btt i{
+  padding-top:5px;
+}
+
 .card-img{
   object-fit:cover;
   height:100%;
   width:100%;
   border-radius:4px;
-  border:1px solid var(--secondary-color);
+  border:2px solid var(--dark);
 }
 .card{
   overflow:hidden;
   background:inherit;
   border:0;
-  border-bottom:2px solid var(--primary-color);
+  border-bottom:2px solid var(--secondary-color);
   padding:50px 0;
   border-radius:0;
 }
@@ -38,44 +74,12 @@ footer{
 .jumbotron{
   border-radius:0;
 }
-#intro{
-  border-radius: 0;
-  background:url(images/amsterdam.jpg);
-  background-size:cover;
-  height:100vh;
-}
-#introTxt{
-  padding:20px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius:5px;
-  backdrop-filter: blur(10px);
-}
-
-#about, #projects{
-  border-bottom:1px solid #999;
-}
-
-#btt{
-  background:#222;
-  border-radius:50%;
-  height:45px;
-  width:45px;
-  overflow:hidden;
-  text-align:center;
-  position:fixed;
-  bottom:1.6%;
-  right:1.6%;
-  display:none;
-}
-#btt i{
-  margin-top:4px;
-}
 
 @media (max-width: 990px) {
   .card-img{
     height:100%;
   }
   #intro{
-    background-position: right;
+    background-position:left;
   }
 }
