@@ -66,17 +66,20 @@ body{
 .card-body{
   padding:30px;
 }
-.fa-js-square{
+.js{
   color:#E9D54D;
 }
-.fa-css3-alt{
+.css{
   color:#1A70B5;
 }
-.fa-html5{
+.html{
   color:#DD4C25;
 }
-.fa-bootstrap{
+.bootstrap{
   color:#563D7C;
+}
+.col{
+  padding:0px 10px;
 }
 footer{
   padding:10px;
