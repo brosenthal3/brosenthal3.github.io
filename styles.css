@@ -78,6 +78,12 @@ body{
 .bootstrap{
   color:#563D7C;
 }
+.react{
+  color:#00D8FF;
+}
+.sass{
+  color:#CD6799;
+}
 .col{
   padding:0px 10px;
 }
@@ -87,6 +93,12 @@ footer{
 }
 .jumbotron{
   border-radius:0;
+}
+.italic{
+  font-style:italic;
+}
+.uppercase{
+  text-transform:uppercase;
 }
 
 @media (max-width: 990px) {
