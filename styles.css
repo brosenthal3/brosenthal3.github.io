@@ -24,6 +24,22 @@ body{
   border-radius:5px;
   backdrop-filter: blur(10px);
 }
+.navigation{
+  display:flex;
+  justify-content:center;
+}
+.nav-btn{
+  color:initial;
+  background:rgba(187, 203, 204, 0.4);
+  padding:.5rem 1.3rem;
+  border-radius:0px;
+  transition:background 200ms ease-in;
+}
+.nav-btn:hover{
+  color:initial;
+  text-decoration: none;
+  background:rgba(194, 210, 232, 0.10);
+}
 
 .skills{
   background-color:white;
@@ -46,6 +62,11 @@ body{
 #about{
   padding-top:4rem;
   padding-bottom:1rem;
+}
+
+#projects{
+  background-color:#343A40;
+  background-color: rgba(255, 255, 255, 0.80);
 }
 #btt{
   background:#222;
@@ -108,6 +129,7 @@ body{
 footer{
   padding:10px;
   text-align:center;
+  background:rgba(194, 210, 232, 0.50);
 }
 .jumbotron{
   border-radius:0;
@@ -119,10 +141,6 @@ footer{
   text-transform:uppercase;
 }
 
-#projects{
-  color:#f1f1f1;
-  background-color:#343A40;
-}
 
 @media (max-width: 990px) {
   .card-img{
