@@ -1,7 +1,7 @@
 :root{
   --accent-color:#4A4B02;
   --primary-color:#A56C47;
-  --secondary-color:#888;
+  --secondary-color:rgba(55, 75, 82, 0.8);
   --dark:#333;
 }
 
@@ -10,6 +10,29 @@ html{
 }
 body{
   background:#dfdfdf;
+}
+footer{
+  padding:10px;
+  text-align:center;
+  background:rgba(194, 210, 232, 0.50);
+}
+
+.btun{
+  padding:.5rem 1.3rem;
+  color:inherit;
+  background:rgba(187, 203, 204, 0.4);
+  transition:background 140ms ease-in;
+}
+.btun:hover{
+  color:initial;
+  text-decoration: none;
+  background:rgba(194, 210, 232, 0.10);
+}
+.btun-dark{
+  background:rgba(58, 77, 78, 0.47);
+}
+.btun-secondary{
+  padding:auto;
 }
 
 #intro{
@@ -24,18 +47,42 @@ body{
   border-radius:5px;
   backdrop-filter: blur(10px);
 }
+#about{
+  padding-top:4rem;
+  padding-bottom:1rem;
+}
+#projects{
+  background-color:#343A40;
+  background-color: rgba(255, 255, 255, 0.80);
+}
+#btt{
+  background:#222;
+  border-radius:50%;
+  height:45px;
+  width:45px;
+  overflow:hidden;
+  text-align:center;
+  position:fixed;
+  bottom:1.6%;
+  right:1.6%;
+  display:none;
+}
+#btt i{
+  padding-top:5px;
+}
+
 .navigation{
   display:flex;
   justify-content:center;
 }
-.nav-btn{
+.nav-btun{
   color:initial;
   background:rgba(187, 203, 204, 0.4);
   padding:.5rem 1.3rem;
   border-radius:0px;
   transition:background 200ms ease-in;
 }
-.nav-btn:hover{
+.nav-btun:hover{
   color:initial;
   text-decoration: none;
   background:rgba(194, 210, 232, 0.10);
@@ -59,36 +106,13 @@ body{
 .skills p{
   margin-bottom:0;
 }
-#about{
-  padding-top:4rem;
-  padding-bottom:1rem;
-}
-
-#projects{
-  background-color:#343A40;
-  background-color: rgba(255, 255, 255, 0.80);
-}
-#btt{
-  background:#222;
-  border-radius:50%;
-  height:45px;
-  width:45px;
-  overflow:hidden;
-  text-align:center;
-  position:fixed;
-  bottom:1.6%;
-  right:1.6%;
-  display:none;
-}
-#btt i{
-  padding-top:5px;
-}
 
 .card-img{
   object-fit:cover;
   height:100%;
   width:100%;
   border-radius:6px;
+  object-position: left;
   /*border:2px solid var(--dark);*/
 }
 .card{
@@ -105,6 +129,8 @@ body{
 .card-body{
   padding:30px;
 }
+
+
 .js{
   color:#E9D54D;
 }
@@ -126,11 +152,7 @@ body{
 .col{
   padding:2px 5px;
 }
-footer{
-  padding:10px;
-  text-align:center;
-  background:rgba(194, 210, 232, 0.50);
-}
+
 .jumbotron{
   border-radius:0;
 }
@@ -141,8 +163,7 @@ footer{
   text-transform:uppercase;
 }
 
-
-@media (max-width: 990px) {
+@media (max-width:990px) {
   .card-img{
     height:100%;
   }
