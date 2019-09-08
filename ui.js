@@ -30,7 +30,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-window.addEventListener('load', setHeight());
+//window.addEventListener('load', setHeight());
 
 //the function that gets activated when the back to top buttn is pressed.
 function toTop() {

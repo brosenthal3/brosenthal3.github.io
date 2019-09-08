@@ -15,8 +15,8 @@
     <link href="index_files/album.css" rel="stylesheet">
 
     <!-- Personal stylesheet and fontawesome logo support -->
-    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/8f58f8e2fc.js"></script>
+    <link rel="stylesheet" href="styles.css">
 
   </head>
   <body cz-shortcut-listen="true">
@@ -61,6 +61,8 @@
     </div>
   </section>
 
+  
+
   <!-- About section -->
   <section class="jumbotron text-center" id="about">
       <div class="container">
@@ -69,39 +71,37 @@
         <p class="lead text-muted">I'm a self taught developer and I've learnt everything I know from the internet. Some of the resources I used were FreeCodeCamp, The Odin Project and the Traversy Media YouTube channel.</p>
 
         <!--<p class="lead text-muted">Right now I am focused on learning the React Javascript library by working on verious projects that utilize React's functionality. I am also learning to style websites with SASS, the CSS preprocessor.</p>-->
-        <p class="lead text-muted">My Front-end Skills:</p>
+        <!--<p class="lead text-muted">My Front-end Skills:</p>-->
+        
 
-        <div class="row my-4">
-            <div class="col">
-              <i class="fab fa-html5 html fa-5x"></i>
-              <p>HTML5</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-css3-alt css fa-5x"></i>
-              <p>CSS3</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-js-square js fa-5x"></i>
-              <p>JavaScript</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-bootstrap bootstrap fa-5x"></i>
-              <p>Bootstrap</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-sass sass fa-5x"></i>
-              <p>Sass</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-react react fa-5x"></i>
-              <p>React</p>
-            </div>
-        </div>
       </div>
+  </section>
+
+  <section class="skills py-4 pb-5">
+    <div class="container">
+      <div class="col">
+        <i class="fab fa-html5 html fa-3x"></i>
+      </div>
+      <div class="col">
+        <i class="fab fa-css3-alt css fa-3x"></i>
+      </div>
+      <div class="col">
+        <i class="fab fa-js-square js fa-3x"></i>
+      </div>
+      <div class="col">
+        <i class="fab fa-bootstrap bootstrap fa-3x"></i>
+      </div>
+      <div class="col">
+        <i class="fab fa-sass sass fa-3x"></i>
+      </div>
+      <div class="col">
+        <i class="fab fa-react react fa-3x"></i>
+      </div>
+    </div>
   </section>
   
   <!-- Projects album section/div -->
-  <section class="album py-5 bg-light" id="projects">
+  <section class="album py-5" id="projects">
     <div class="container">
         <h1 class="jumbotron-heading text-center mb-2">My Projects</h1>
 
@@ -119,7 +119,7 @@
                   <p class="card-text">Opinions is a website that allowes you to view popular political ideologies and take a small quiz that shows you your own political ideology. The website takes uses HTML5, CSS and Javascript, along with Bootstrap 4.</p>
 
                   <div class="btn-group">
-                    <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank" class="btn btn-dark">View Project</a>
+                    <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank" class="btn btn-light">View Project</a>
                     <a href="https://github.com/brosenthal3/opinions" target="_blank" class="btn btn-secondary">Code</a>
                   </div>
                 </div>
@@ -141,7 +141,7 @@
                     </div>
                     <p class="card-text">This is a small React application that uses ascii codes in order to encrypt and decrypt text, using a special key number. The user interface is made with React and the styling with the CSS preprocessor Sass.</p>
                     <div class="btn-group">
-                      <a href="https://brosenthal3.github.io/encrypter" target="_blank" class="btn btn-dark">View Project</a>
+                      <a href="https://brosenthal3.github.io/encrypter" target="_blank" class="btn btn-light">View Project</a>
                       <a href="https://github.com/brosenthal3/encrypter" target="_blank" class="btn btn-secondary">Code</a>
                     </div>
                   </div>
@@ -152,18 +152,18 @@
         <div class="card">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <a href="https://brosenthal3.github.io/ambten" target="_blank"><img src="images/ambten.png" class="card-img" alt="Code Image"></a>
+              <a href="https://brosenthal3.github.io/biokrant" target="_blank"><img src="images/biokrant.png" class="card-img" alt="Code Image"></a>
             </div>            
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Ambten Website</h5>
+                <h5 class="card-title">Biokrant</h5>
                 <div class="my-2">
-                  <small class="text-muted uppercase">html, css, bootstrap</small>
+                  <small class="text-muted uppercase">html, css, Materialize-css</small>
                 </div>
-                <p class="card-text">This is a static single-page website of a made up Dutch company called "Ambten". This company helps with start-ups and small companies. The website has 5 sections including about us and pricing. The Ambten website is made using HTML5 and CSS with the help of Bootstrap 4 for styling.</p>
+                <p class="card-text">A project for biology class where I had to write multiple articles in a 'biokrant' - biology newspaper. This project uses simple HTML5 with the material design materialize css framework. This project is still unfinished.</p>
                 <div class="btn-group">
-                  <a href="https://brosenthal3.github.io/ambten" target="_blank" class="btn btn-dark">View Project</a>
-                  <a href="https://github.com/brosenthal3/ambten" target="_blank" class="btn btn-secondary">Code</a>
+                  <a href="https://brosenthal3.github.io/biokrant" target="_blank" class="btn btn-light">View Project</a>
+                  <a href="https://github.com/brosenthal3/biokrant" target="_blank" class="btn btn-secondary">Code</a>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                   </div>
                   <p class="card-text">The missing letters game is a small Javascript game. You can choose from 3 themes and each time, click on the missing letter from the randomly chosen word. This project was made with Vanilla Javascript and uses css for styling.</p>
                   <div class="btn-group">
-                    <a href="https://brosenthal3.github.io/letters" target="_blank" class="btn btn-dark">View Project</a>
+                    <a href="https://brosenthal3.github.io/letters" target="_blank" class="btn btn-light">View Project</a>
                     <a href="https://github.com/brosenthal3/letters" target="_blank" class="btn btn-secondary">Code</a>
                   </div>
                 </div>
@@ -200,7 +200,7 @@
               <div class="card-body">
                 <h5 class="card-title">Ambten Website</h5>
                 <p class="card-text">A static one-page website with a modern design.</p>
-                <a href="https://brosenthal3.github.io/ambten" target="_blank" class="btn btn-dark">View Project</a>
+                <a href="https://brosenthal3.github.io/ambten" target="_blank" class="btn btn-light">View Project</a>
               </div>
               <div class="card-footer">
                 <small class="text-muted">HTML, CSS, Bootstrap</small>
@@ -212,7 +212,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Opinions</h5>
                   <p class="card-text">Opinions is a website where you can take a quiz and view your political opinions.</p>
-                  <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank" class="btn btn-dark">View Project</a>
+                  <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank" class="btn btn-light">View Project</a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
@@ -224,7 +224,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Encrypter & Decrypter</h5>
                   <p class="card-text">A small Javascript application that can encrypt and decrypt text.</p>
-                  <a href="https://brosenthal3.github.io/encrypter/index.html" target="_blank" class="btn btn-dark">View Project</a>
+                  <a href="https://brosenthal3.github.io/encrypter/index.html" target="_blank" class="btn btn-light">View Project</a>
                 </div>  
                 <div class="card-footer">
                   <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
@@ -240,7 +240,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Escape Room</h5>
                   <p class="card-text">Online escape room with multiple levels and riddles. Some riddles won't work on mobile.</p>
-                  <a href="Escape Room/index.html" target="_blank" class="btn btn-dark">View Project</a>
+                  <a href="Escape Room/index.html" target="_blank" class="btn btn-light">View Project</a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
@@ -252,7 +252,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Missing Letters Game</h5>
                     <p class="card-text">A small game where you need to select the missing letter in a word.</p>
-                    <a href="letters/index.html" target="_blank" class="btn btn-dark">View Project</a>
+                    <a href="letters/index.html" target="_blank" class="btn btn-light">View Project</a>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
@@ -264,7 +264,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Mathematical Calculators</h5>
                     <p class="card-text">Two calculators to solve a square equation and pytagoras.</p>
-                    <a href="wiskunde/index.html" target="_blank" class="btn btn-dark">View Project</a>
+                    <a href="wiskunde/index.html" target="_blank" class="btn btn-light">View Project</a>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">HTML, CSS, Javascript</small>
