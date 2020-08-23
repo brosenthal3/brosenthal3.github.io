@@ -8,102 +8,117 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="index_files/bootstrap.min.css">
-    <!--  Favicon -->
+    <!--Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
     <!-- Custom styles from bootstrap template -->
     <link href="index_files/album.css" rel="stylesheet">
-
     <!-- Personal stylesheet and fontawesome logo support -->
     <script src="https://kit.fontawesome.com/8f58f8e2fc.js"></script>
     <link rel="stylesheet" href="styles.css">
-
   </head>
+
   <body cz-shortcut-listen="true">
-    <!--<header>
-    <div class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm " id="navbar">
-        <div class="container d-flex justify-content-between">
-            <a href="#navbar" class="navbar-brand d-flex align-items-center">
-                <strong>Ikbenben</strong>
-            </a>
+    
+  <main role="main">
+    <!-- First intro Section -->
+    <section class="jumbotron text-center" id="intro">
+      <div class="container" id="introTxt">
+        <h1 class="jumbotron-heading">Ben Rosenthal</h1>
+        <p class="jumbotron-heading">Front-end Web Developer</p>
+        <p class="lead text-muted">On this website you can view a showcase of all of my projects and my programming abilities.</p>
+        <div class="navigation">
+          <a href="#about" class="nav-btun">About</a>
+          <a href="#projects" class="nav-btun">Portfolio</a>
+          <a href="#contact" class="nav-btun">Contact</a>
+        </div>
+      </div>
+    </section>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    
 
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                      <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-              </ul>  
+    <!-- About section -->
+    <section class="jumbotron text-center" id="about">
+        <div class="container">
+          <h1 class="jumbotron-heading">About Me</h1>
+          <p class="lead text-muted">Hello there! My name is Ben Rosenthal and I am a front-end web developer. I love coding in Javascript and using React. I am currently following the Odin Project curriculum for full-stack Javascript development and I am constantly learning more and more.</p>
+        </div>
+    </section>
+
+    <section class="skills py-4 pb-5">
+      <div class="container">
+        <div class="col">
+          <i class="fab fa-html5 html fa-3x"></i>
+        </div>
+        <div class="col">
+          <i class="fab fa-css3-alt css fa-3x"></i>
+        </div>
+        <div class="col">
+          <i class="fab fa-js-square js fa-3x"></i>
+        </div>
+        <div class="col">
+          <i class="fab fa-bootstrap bootstrap fa-3x"></i>
+        </div>
+        <div class="col">
+          <i class="fab fa-sass sass fa-3x"></i>
+        </div>
+        <div class="col">
+          <i class="fab fa-react react fa-3x"></i>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects album section/div -->
+    <section class="album py-5" id="projects">
+      <div class="container">
+          <h1 class="jumbotron-heading text-center mb-2">My Projects</h1>
+
+          <div class="card">
+            <div class="row no-gutters">  
+              <div class="col-md-4">
+                <a href="https://brosenthal3.github.io/tic-tac-toe/index.html" target="_blank"><img src="images/tictactoe.png" class="card-img" alt="Code Image"></a>
+              </div>          
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tic Tac Toe</h5>
+                  <div class="my-2">
+                    <small class="text-muted uppercase">html, css, javascript</small>
+                  </div>
+                  <p class="card-text">This is a small Tic-Tac-Toe game that allows two players to play against each other. It was made with vanilla Javascript using the module design pattern and various object-oriented principles. In the future I strive to add an AI to play against.</p>
+
+                  <div class="btun-group">
+                    <a href="https://brosenthal3.github.io/tic-tac-toe/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                    <a href="https://github.com/brosenthal3/tic-tac-toe" target="_blank" class="btun btun-secondary">Code</a>
+                  </div>
+                </div>
+              </div>
+              
             </div>
         </div>
-    </div>
 
-  </header>-->
+          <div class="card">
+              <div class="row no-gutters">  
+                <div class="col-md-4">
+                  <a href="https://brosenthal3.github.io/Ahlan/index.html" target="_blank"><img src="images/ahlan.png" class="card-img" alt="Code Image"></a>
+                </div>          
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Ahlan Restaurant</h5>
+                    <div class="my-2">
+                      <small class="text-muted uppercase">javascript, npm, webpack, css</small>
+                    </div>
+                    <p class="card-text">Ahlan is a made up middle-eastern restaurant. The website includes three pages and is being dynamically created with vanilla Javascript. This project makes use of the module bundler Webpack, ES6 modules and npm.</p>
 
-<main role="main">
-  <!-- First intro Section -->
-  <section class="jumbotron text-center" id="intro">
-    <div class="container" id="introTxt">
-      <h1 class="jumbotron-heading">Ben Rosenthal</h1>
-      <p class="jumbotron-heading">Front-end Web Developer</p>
-      <p class="lead text-muted">On this website you can view a showcase of all of my projects and my programming abilities.</p>
-      <div class="navigation">
-        <a href="#about" class="nav-btun">About</a>
-        <a href="#projects" class="nav-btun">Portfolio</a>
-        <a href="#contact" class="nav-btun">Contact</a>
-      </div>
-    </div>
-  </section>
+                    <div class="btun-group">
+                      <a href="https://brosenthal3.github.io/Ahlan/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                      <a href="https://github.com/brosenthal3/Ahlan" target="_blank" class="btun btun-secondary">Code</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
 
-  
-
-  <!-- About section -->
-  <section class="jumbotron text-center" id="about">
-      <div class="container">
-        <h1 class="jumbotron-heading">About Me</h1>
-        <p class="lead text-muted">My name is Ben Rosenthal and I am a front-end web developer. I always try to document my code with comments, so that it would be readable and understandable. All of my projects on this site are fully responsive for computers, tablets and phones, because I think it's very important for every website.</p>
-        <p class="lead text-muted">I'm a self taught developer and I've learnt everything I know from the internet. Some of the resources I used were FreeCodeCamp, The Odin Project and the Traversy Media YouTube channel.</p>
-      </div>
-  </section>
-
-  <section class="skills py-4 pb-5">
-    <div class="container">
-      <div class="col">
-        <i class="fab fa-html5 html fa-3x"></i>
-      </div>
-      <div class="col">
-        <i class="fab fa-css3-alt css fa-3x"></i>
-      </div>
-      <div class="col">
-        <i class="fab fa-js-square js fa-3x"></i>
-      </div>
-      <div class="col">
-        <i class="fab fa-bootstrap bootstrap fa-3x"></i>
-      </div>
-      <div class="col">
-        <i class="fab fa-sass sass fa-3x"></i>
-      </div>
-      <div class="col">
-        <i class="fab fa-react react fa-3x"></i>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Projects album section/div -->
-  <section class="album py-5" id="projects">
-    <div class="container">
-        <h1 class="jumbotron-heading text-center mb-2">My Projects</h1>
-
-        <div class="card">
+          <div class="card">
             <div class="row no-gutters">  
               <div class="col-md-4">
                 <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank"><img src="images/opinions.png" class="card-img" alt="Code Image"></a>
@@ -124,187 +139,187 @@
               </div>
               
             </div>
-          </div>
-
-          <div class="card">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <a href="https://brosenthal3.github.io/encrypter" target="_blank"><img src="images/encrypter.png" class="card-img" alt="Code Image"></a>
-                </div>            
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Text Encrypter</h5>
-                    <div class="my-2">
-                      <small class="text-muted uppercase">javascript, react, sass</small>
-                    </div>
-                    <p class="card-text">This is a small React application that uses ascii codes in order to encrypt and decrypt text, using a special key number. The user interface is made with React and the styling with the CSS preprocessor Sass.</p>
-                    <div class="btun-group">
-                      <a href="https://brosenthal3.github.io/encrypter" target="_blank" class="btun btun-dark">View Project</a>
-                      <a href="https://github.com/brosenthal3/encrypter" target="_blank" class="btun btun-secondary">Code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        <div class="card">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <a href="https://brosenthal3.github.io/biokrant" target="_blank"><img src="images/biokrant.png" class="card-img" alt="Code Image"></a>
-            </div>            
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Biokrant</h5>
-                <div class="my-2">
-                  <small class="text-muted uppercase">html, css, Materialize-css</small>
-                </div>
-                <p class="card-text">A project for biology class where I had to write multiple articles in a 'biokrant' - biology newspaper. This project uses simple HTML5 with the material design materialize css framework. This project is still unfinished.</p>
-                <div class="btun-group">
-                  <a href="https://brosenthal3.github.io/biokrant" target="_blank" class="btun btun-dark">View Project</a>
-                  <a href="https://github.com/brosenthal3/biokrant" target="_blank" class="btun btun-secondary">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-
-        
 
         <div class="card">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <a href="https://brosenthal3.github.io/letters" target="_blank"><img src="images/letters.png" class="card-img" alt="Code Image"></a>
+                <a href="https://brosenthal3.github.io/encrypter" target="_blank"><img src="images/encrypter.png" class="card-img" alt="Code Image"></a>
               </div>            
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Letters Game</h5>
+                  <h5 class="card-title">Text Encrypter</h5>
                   <div class="my-2">
-                    <small class="text-muted uppercase">html, css, javascript</small>
+                    <small class="text-muted uppercase">javascript, react, sass</small>
                   </div>
-                  <p class="card-text">The missing letters game is a small Javascript game. You can choose from 3 themes and each time, click on the missing letter from the randomly chosen word. This project was made with Vanilla Javascript and uses css for styling.</p>
+                  <p class="card-text">This is a small React application that uses ascii codes in order to encrypt and decrypt text, using a special key number. The user interface is made with React and the styling with the CSS preprocessor Sass.</p>
                   <div class="btun-group">
-                    <a href="https://brosenthal3.github.io/letters" target="_blank" class="btun btun-dark">View Project</a>
-                    <a href="https://github.com/brosenthal3/letters" target="_blank" class="btun btun-secondary">Code</a>
+                    <a href="https://brosenthal3.github.io/encrypter" target="_blank" class="btun btun-dark">View Project</a>
+                    <a href="https://github.com/brosenthal3/encrypter" target="_blank" class="btun btun-secondary">Code</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-        <!--<div class="card-deck">
-
-            <div class="card">
-              <img src="images/schoolCode.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ambten Website</h5>
-                <p class="card-text">A static one-page website with a modern design.</p>
-                <a href="https://brosenthal3.github.io/ambten" target="_blank" class="btun btun-dark">View Project</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">HTML, CSS, Bootstrap</small>
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <a href="https://brosenthal3.github.io/biokrant" target="_blank"><img src="images/biokrant.png" class="card-img" alt="Code Image"></a>
+              </div>            
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Biokrant</h5>
+                  <div class="my-2">
+                    <small class="text-muted uppercase">html, css, Materialize-css</small>
+                  </div>
+                  <p class="card-text">A project for biology class where I had to write multiple articles in a 'biokrant' - biology newspaper. This project uses simple HTML5 with the material design materialize css framework. </p>
+                  <div class="btun-group">
+                    <a href="https://brosenthal3.github.io/biokrant" target="_blank" class="btun btun-dark">View Project</a>
+                    <a href="https://github.com/brosenthal3/biokrant" target="_blank" class="btun btun-secondary">Code</a>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="card">
-                <img src="images/bbcCode.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Opinions</h5>
-                  <p class="card-text">Opinions is a website where you can take a quiz and view your political opinions.</p>
-                  <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank" class="btun btun-dark">View Project</a>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
-                </div>
-              </div>
-
-            <div class="card">
-                <img src="images/encrypterCode.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Encrypter & Decrypter</h5>
-                  <p class="card-text">A small Javascript application that can encrypt and decrypt text.</p>
-                  <a href="https://brosenthal3.github.io/encrypter/index.html" target="_blank" class="btun btun-dark">View Project</a>
-                </div>  
-                <div class="card-footer">
-                  <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
-                </div>
-            </div>
-
           </div>
-          <br>
+
+          
+
+          <!--<div class="card">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <a href="https://brosenthal3.github.io/letters" target="_blank"><img src="images/letters.png" class="card-img" alt="Code Image"></a>
+                </div>            
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Letters Game</h5>
+                    <div class="my-2">
+                      <small class="text-muted uppercase">html, css, javascript</small>
+                    </div>
+                    <p class="card-text">The missing letters game is a small Javascript game. You can choose from 3 themes and each time, click on the missing letter from the randomly chosen word. This project was made with Vanilla Javascript and uses css for styling.</p>
+                    <div class="btun-group">
+                      <a href="https://brosenthal3.github.io/letters" target="_blank" class="btun btun-dark">View Project</a>
+                      <a href="https://github.com/brosenthal3/letters" target="_blank" class="btun btun-secondary">Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           <div class="card-deck">
 
               <div class="card">
-                <img src="images/escapeCode.PNG" class="card-img-top" alt="...">
+                <img src="images/schoolCode.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Escape Room</h5>
-                  <p class="card-text">Online escape room with multiple levels and riddles. Some riddles won't work on mobile.</p>
-                  <a href="Escape Room/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                  <h5 class="card-title">Ambten Website</h5>
+                  <p class="card-text">A static one-page website with a modern design.</p>
+                  <a href="https://brosenthal3.github.io/ambten" target="_blank" class="btun btun-dark">View Project</a>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
+                  <small class="text-muted">HTML, CSS, Bootstrap</small>
                 </div>
               </div>
-  
+
               <div class="card">
-                  <img src="images/lettersCode.png" class="card-img-top" alt="...">
+                  <img src="images/bbcCode.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Missing Letters Game</h5>
-                    <p class="card-text">A small game where you need to select the missing letter in a word.</p>
-                    <a href="letters/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                    <h5 class="card-title">Opinions</h5>
+                    <p class="card-text">Opinions is a website where you can take a quiz and view your political opinions.</p>
+                    <a href="https://brosenthal3.github.io/opinions/index.html" target="_blank" class="btun btun-dark">View Project</a>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
                   </div>
-              </div>
-  
+                </div>
+
               <div class="card">
-                  <img src="images/mathCode.png" class="card-img-top" alt="...">
+                  <img src="images/encrypterCode.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Mathematical Calculators</h5>
-                    <p class="card-text">Two calculators to solve a square equation and pytagoras.</p>
-                    <a href="wiskunde/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                    <h5 class="card-title">Encrypter & Decrypter</h5>
+                    <p class="card-text">A small Javascript application that can encrypt and decrypt text.</p>
+                    <a href="https://brosenthal3.github.io/encrypter/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                  </div>  
+                  <div class="card-footer">
+                    <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
+                  </div>
+              </div>
+
+            </div>
+            <br>
+            <div class="card-deck">
+
+                <div class="card">
+                  <img src="images/escapeCode.PNG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Escape Room</h5>
+                    <p class="card-text">Online escape room with multiple levels and riddles. Some riddles won't work on mobile.</p>
+                    <a href="Escape Room/index.html" target="_blank" class="btun btun-dark">View Project</a>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">HTML, CSS, Javascript</small>
+                    <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
                   </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/lettersCode.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Missing Letters Game</h5>
+                      <p class="card-text">A small game where you need to select the missing letter in a word.</p>
+                      <a href="letters/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/mathCode.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mathematical Calculators</h5>
+                      <p class="card-text">Two calculators to solve a square equation and pytagoras.</p>
+                      <a href="wiskunde/index.html" target="_blank" class="btun btun-dark">View Project</a>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">HTML, CSS, Javascript</small>
+                    </div>
+                </div>
               </div>
-            </div>
-      </div>-->
+        </div>-->
 
-      
-    </div>
-  </section>
+        
+      </div>
+    </section>
 
-  <!-- Contact me section -->
-  <section class="jumbotron text-center">
-      <div class="container">
-          <div id="contact">
-            <h1 class="jumbotron-heading mb-4">Contact Me</h1>
-            <div class="row">
-              <div class="col">
-                <a href="https://twitter.com/Brosenthal03" target="_blank" class="fav-ic text-body">
-                  <i class="fab fa-twitter fa-3x p-3"></i>
-                  <p>Follow My Twitter</p>
-                </a>
-              </div>
-              <div class="col">
-                <a href="https://github.com/brosenthal3" target="_blank" class="fav-ic text-body">
-                    <i class="fab fa-github fa-3x p-3"></i>
-                    <p>Check My Github</p>
-                </a>
-              </div>
-              <div class="col">
-                <a href="mailto:benben.rosenthal@gmail.com" target="_blank" class="fav-ic text-body">
-                    <i class="fas fa-at fa-3x p-3"></i>
-                    <p>Send an Email</p>
-                </a>
-              </div>
+    <!-- Contact me section -->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <div id="contact">
+              <h1 class="jumbotron-heading mb-4">Contact Me</h1>
+              <div class="row">
+                <div class="col">
+                  <a href="https://twitter.com/Brosenthal03" target="_blank" class="fav-ic text-body">
+                    <i class="fab fa-twitter fa-3x p-3"></i>
+                    <p>Follow My Twitter</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://github.com/brosenthal3" target="_blank" class="fav-ic text-body">
+                      <i class="fab fa-github fa-3x p-3"></i>
+                      <p>Check My Github</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="mailto:benben.rosenthal@gmail.com" target="_blank" class="fav-ic text-body">
+                      <i class="fas fa-at fa-3x p-3"></i>
+                      <p>Send an Email</p>
+                  </a>
+                </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-  </section>
-</main>
+    </section>
+  </main>
 
   <!-- Footer of the page -->
   <footer class="footer" role="footer">

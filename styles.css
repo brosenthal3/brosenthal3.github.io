@@ -111,10 +111,25 @@ footer{
   object-fit:cover;
   height:100%;
   width:100%;
-  border-radius:6px;
-  object-position: left;
+  object-position: center;
   /*border:2px solid var(--dark);*/
+  opacity:0.75;
+  border-radius:6px;
+  transition-property:opacity;
+  transition-duration:250ms;
 }
+.card-img:hover{
+  opacity:1;
+}
+.col-md-4{
+  background-color:var(--dark);
+  border-radius:6px;
+  transition-property:box-shadow;
+  transition-duration:250ms;
+}
+/*.col-md-4:hover{
+  box-shadow:1px 1px 7px 2px rgba(0, 0, 0, 0.4);
+}*/
 .card{
   overflow:hidden;
   background:inherit;
